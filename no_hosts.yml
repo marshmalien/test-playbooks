@@ -1,0 +1,6 @@
+---
+- name: A playbook with no hosts
+  hosts: []
+  gather_facts: false
+  tasks:
+    - debug:
