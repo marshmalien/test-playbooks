@@ -3,8 +3,8 @@
 - hosts: all
   gather_facts: false
   tasks:
-    - name: Display uptime - SSH
-      commands:
-        - show version | include uptime
-      register: ssh_uptime
-      when: ssh_enabled is succeeded
+  - name: Display uptime - SSH
+    commands:
+    - show version | include uptime
+    register: ssh_uptime
+    when: ssh_enabled is succeeded
