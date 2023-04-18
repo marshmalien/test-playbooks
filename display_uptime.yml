@@ -1,0 +1,10 @@
+---
+
+- name: "Display uptime - SSH"
+  ios_command:
+  commands:
+  - show version | include uptime
+  register: ssh_uptime
+  when: ssh_enabled is succeeded
+
+
