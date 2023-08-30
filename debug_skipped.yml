@@ -1,8 +1,7 @@
----
-
-- hosts: all
+- name: Debug Skipped
+  hosts: all
   tasks:
     - name: Hello Message Debug Skipped
-      debug: 
-      msg: echo "Hello World!"
-      when: false
+      debug:
+        msg: echo "Hello World!"
+        when: false
