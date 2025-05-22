@@ -1,0 +1,9 @@
+---
+- name: Force a host to fail in Ansible Tower
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Force failure using fail module
+      fail:
+        msg: "Intentional failure for Tower UI testing"
